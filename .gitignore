@@ -1,0 +1,11 @@
+bin
+.setting
+out
+gen
+project.properties
+*.iml
+build.xml
+local.properties
+proguard-project.txt
+ant.properties
+.idea
