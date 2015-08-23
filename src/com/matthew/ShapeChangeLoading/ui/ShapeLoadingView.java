@@ -1,7 +1,5 @@
 package com.matthew.ShapeChangeLoading.ui;
 
-import android.animation.Animator;
-import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -10,7 +8,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 
@@ -182,38 +179,6 @@ public class ShapeLoadingView extends View {
         canvas.drawPath(mPath, mPaint);
         invalidate();
     }
-
-//    public void startAnimator(){
-//        ObjectAnimator squareAnimation = ObjectAnimator.ofFloat(this, "controlPointOffset", maxControlPointOffset, 0).setDuration(2000);
-//        squareAnimation.setInterpolator(new LinearInterpolator());
-//        ObjectAnimator triAnimation = ObjectAnimator.ofFloat(this, "triControlPointOffset", squareWidth, 0).setDuration(2000);
-//        triAnimation.setInterpolator(new LinearInterpolator());
-//        squareAnimation.addListener(new Animator.AnimatorListener() {
-//            @Override
-//            public void onAnimationStart(Animator animation) {
-//
-//            }
-//
-//            @Override
-//            public void onAnimationEnd(Animator animation) {
-//
-//            }
-//
-//            @Override
-//            public void onAnimationCancel(Animator animation) {
-//
-//            }
-//
-//            @Override
-//            public void onAnimationRepeat(Animator animation) {
-//
-//            }
-//        });
-//        final AnimatorSet set = new AnimatorSet();
-//        set.play(squareAnimation).before(triAnimation);
-//        set.
-//        set.start();
-//    }
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
